@@ -10,8 +10,11 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
+    private UserRepository userRepository;
+
     public UserServiceImpl(UserRepository userRepository) {
         super();
+        this.userRepository = userRepository;
     }
 
     @Override
@@ -26,6 +29,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void verifyEmail(String email) {
-
+        userRepository.Optional
     }
 }
