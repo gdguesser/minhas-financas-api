@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.guesser</groupId>
-	<artifactId>minhasfinancas</artifactId>
+	<artifactId>myfinances</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>minhasfinancas</name>
-	<description>Projeto para gerenciamento de finanças pessoais.</description>
+	<name>myfinances</name>
+	<description>Project for management of personal spendings.</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -20,6 +20,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 		</dependency>
 
 		<dependency>
