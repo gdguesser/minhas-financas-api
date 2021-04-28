@@ -1,13 +1,13 @@
-package com.guesser.minhasfinancas;
+package com.guesser.myfinances;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MinhasfinancasApplication {
+public class MyFinancesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MinhasfinancasApplication.class, args);
+		SpringApplication.run(MyFinancesApplication.class, args);
 	}
 
 }

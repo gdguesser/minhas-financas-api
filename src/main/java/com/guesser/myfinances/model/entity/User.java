@@ -1,9 +1,9 @@
-package com.guesser.minhasfinancas.model;
+package com.guesser.myfinances.model.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user", schema = "finances")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -13,5 +13,4 @@ public class User {
     private String name;
     private String email;
     private String password;
-
 }

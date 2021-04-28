@@ -1,10 +1,10 @@
-package com.guesser.minhasfinancas.model;
+package com.guesser.myfinances.model.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "release", schema = "finances")
+@Table(name = "releases")
 public class Release {
 
     @Id
