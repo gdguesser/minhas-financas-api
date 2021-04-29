@@ -1,5 +1,7 @@
 package com.guesser.myfinances.model.entity;
 
+import com.guesser.myfinances.model.enums.ReleaseStatus;
+import com.guesser.myfinances.model.enums.ReleaseType;
 import lombok.Data;
 import javax.persistence.*;
 import java.math.BigDecimal;
