@@ -22,4 +22,10 @@ public class Release {
 
     private BigDecimal value;
     private LocalDate dateRegister;
+
+    @Enumerated(value = EnumType.STRING)
+    private ReleaseType type;
+
+    @Enumerated(value = EnumType.STRING)
+    private ReleaseStatus status;
 }
