@@ -29,6 +29,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void verifyEmail(String email) {
-        userRepository.Optional
+        userRepository.existsByEmail(email)
     }
 }
