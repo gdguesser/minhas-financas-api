@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public UserServiceImpl(UserRepository userRepository) {
         super();
@@ -29,6 +29,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void verifyEmail(String email) {
-        userRepository.existsByEmail(email)
+        userRepository.existsByEmail(email);
     }
 }
