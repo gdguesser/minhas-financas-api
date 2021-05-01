@@ -1,5 +1,6 @@
 package com.guesser.myfinances.service.impl;
 
+import com.guesser.myfinances.exception.BusinessRuleException;
 import com.guesser.myfinances.model.entity.User;
 import com.guesser.myfinances.model.repository.UserRepository;
 import com.guesser.myfinances.service.UserService;
@@ -29,6 +30,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void verifyEmail(String email) {
-        userRepository.existsByEmail(email);
+        boolean exists = userRepository.existsByEmail(email);
+
+        if(exists) {
+            throw new BusinessRuleException("E-mail already taken!");
+        }
     }
 }
